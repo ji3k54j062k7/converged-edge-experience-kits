@@ -22,7 +22,7 @@
     - 8472/udp
   become: yes
   vars:
-    ansible_python_interpreter: "{{ '/usr/bin/python3' if ansible_distribution == 'Ubuntu' else '/usr/bin/python2' }}"
+    ansible_python_interpreter: "{{ '/usr/bin/python3.8' if ansible_distribution == 'Ubuntu' else '/usr/bin/python2' }}"
 
 - name: wait for OVS database
   block:

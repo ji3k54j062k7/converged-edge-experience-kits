@@ -1,0 +1,5 @@
+{
+    "record_type":"A",
+    "fqdn":"nginx.edge",
+    "addresses":["10.244.1.127"] 
+}

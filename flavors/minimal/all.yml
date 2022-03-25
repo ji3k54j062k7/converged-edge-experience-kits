@@ -2,3 +2,5 @@
 # Copyright (c) 2020 Intel Corporation
 
 # Placeholder since minimal flavor is the same as default settings
+kubernetes_cnis:
+  - flannel

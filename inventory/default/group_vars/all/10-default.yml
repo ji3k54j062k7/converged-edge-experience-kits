@@ -85,7 +85,7 @@ ptp_sync_enable: False
 # - ovn4nfv
 # NOTE - For VCAC-A setup, use `weavenet` CNI
 kubernetes_cnis:
-  - calico
+  - flannel
 
 # Calico's CIDR (will be included automatically to noproxy when calico is included in kubernetes_cnis)
 calico_cidr: "10.245.0.0/16"

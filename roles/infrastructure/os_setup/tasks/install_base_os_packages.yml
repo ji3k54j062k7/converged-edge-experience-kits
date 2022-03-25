@@ -39,13 +39,13 @@
   - name: download pip2 on Ubuntu
     get_url:
       url: https://bootstrap.pypa.io/pip/2.7/get-pip.py
-      dest: /home/openness/get-pip.py
+      dest: /home/ubuntu/get-pip.py
       mode: '0777'
     become: yes
     when: ansible_distribution == "Ubuntu"
   
   - name: Install pip2 in Ubuntu
-    command: python2 /home/openness/get-pip.py
+    command: python2 /home/ubuntu/get-pip.py
     become: yes
     when: ansible_distribution == "Ubuntu"
 

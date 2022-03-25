@@ -4,9 +4,9 @@
 ---
 - hosts: controller_group
   tasks:
-  # following roles are not cleaned up directly, they're cleaned when Kubernetes cluster is reset
-  # - nfd
-  # - multus
+  following roles are not cleaned up directly, they're cleaned when Kubernetes cluster is reset
+  - nfd
+  - multus
 
   - name: emco cleanup
     block:

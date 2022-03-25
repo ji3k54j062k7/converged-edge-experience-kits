@@ -105,7 +105,7 @@
     - 2379-2380/tcp
     - 10250-10252/tcp
   vars:
-    ansible_python_interpreter: "{{ '/usr/bin/python3' if ansible_distribution == 'Ubuntu' else '/usr/bin/python2' }}"
+    ansible_python_interpreter: "{{ '/usr/bin/python3.8' if ansible_distribution == 'Ubuntu' else '/usr/bin/python2' }}"
 
 - name: restart services if needed
   meta: flush_handlers
